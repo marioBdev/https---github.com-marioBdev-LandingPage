@@ -34,9 +34,15 @@ p{
     display: inline-block;
     transition: 0.1s;
 }
+.btn.animate-btn{
+    animation: animate-outline 1s ease-out infinite;
+}
 .btn:hover {
     background-color: #3580db;
 }
+/* ---------------------------------------- */
+/* It needs to fix animation button */
+/* ---------------------------------------- */
 @keyframes animate-outline {
     from{
         outline: 0px solid #4f9bf98a;
@@ -76,7 +82,6 @@ nav ul a:not(.btn)::after {
     margin: 0 auto; /*starts from center*/
     transition: 0.3s;
 }
-/* :not(.btn) */
 nav ul a:hover::after {
     width: 100%;
 }
