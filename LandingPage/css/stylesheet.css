@@ -1,107 +1,121 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
-*{
-    margin:0;
-    padding:0;
-    box-sizing: border-box;
-    text-decoration: none;
-    outline: none;
-    font-family: 'Inter', sans-serif;
-} 
-body{
-     background-color: #f1f6fc31;
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  outline: none;
+  font-family: "Inter", sans-serif;
 }
-section,footer{
-    padding:54px 0;
-    /* background-color: red; */
+body {
+  background-color: #f1f6fc31;
 }
-h3{
-    font-size: 200px;
+section,
+footer {
+  padding: 54px 0;
+  /* background-color: red; */
 }
-p{
-    color: #0000009c;
+h3 {
+  font-size: 90px;
+}
+p {
+  color: #0000009c;
 }
 .container {
-    max-width: 1400px;
-    margin: 0 auto;
-    padding:0 5%;
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 0 5%;
 }
 .btn {
-    background-color: #4f9cf9 ;
-    color: white;
-    padding: 15px 20px;
-    border-radius: 10px;
-    cursor: pointer;
-    display: inline-block;
-    transition: 0.1s;
-}
-.btn.animate-btn{
-    animation: animate-outline 1s ease-out infinite;
+  background-color: #4f9cf9;
+  color: white;
+  padding: 15px 20px;
+  border-radius: 10px;
+  cursor: pointer;
+  display: inline-block;
+  transition: 0.1s;
+  animation: animate-outline 1s ease-out infinite;
 }
 .btn:hover {
-    background-color: #3580db;
+  background-color: #3580db;
 }
-/* ---------------------------------------- */
-/* It needs to fix animation button */
-/* ---------------------------------------- */
 @keyframes animate-outline {
-    from{
-        outline: 0px solid #4f9bf98a;
-    }
-    to{
-        outline: 15px solid #4f9bf900;
-    }
+  from {
+    outline: 0px solid #4f9bf98a;
+  }
+  to {
+    outline: 15px solid #4f9bf900;
+  }
 }
-header{
-    background-position: center;
-    background-size: cover;
-    background-attachment: fixed;
+header {
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
 }
-nav{
-    display: flex; /* It sets itens side by side */
-    align-items: center; /* Y axis */
-    justify-content: space-between;
-    padding: 30px;
+nav {
+  display: flex; /* It sets itens side by side */
+  align-items: center; /* Y axis */
+  justify-content: space-between;
+  padding: 30px;
 }
 nav ul {
-    display: flex;
-    align-items: center;
+  display: flex;
+  align-items: center;
 }
-nav ul a{
-    color: white;
-    margin: 0 25px;
-    text-transform: uppercase;
-    font-size: 14px;
-    display: block;
+nav ul a {
+  color: white;
+  margin: 0 25px;
+  text-transform: uppercase;
+  font-size: 14px;
+  display: block;
 }
 nav ul a:not(.btn)::after {
-    content:""; 
-    background-color: #3580db;
-    height: 3px;
-    width: 0%;
-    display: block;
-    margin: 0 auto; /*starts from center*/
-    transition: 0.3s;
+  content: "";
+  background-color: #3580db;
+  height: 3px;
+  width: 0%;
+  display: block;
+  margin: 0 auto; /*starts from center*/
+  transition: 0.3s;
 }
 nav ul a:hover::after {
-    width: 100%;
+  width: 100%;
 }
 
-.banner{
-    display: flex;
-    justify-content: center;
+.banner {
+  display: flex;
+  justify-content: center;
 }
-.banner .banner-text{
-    margin: 150px;
-    text-align: center;
-    padding: 0 150px;
+.banner .banner-text {
+  margin: 150px;
+  text-align: center;
+  padding: 0 150px;
 }
-.banner .banner-text h1{
-    font-size: 96px;
-    color: white;
+.banner .banner-text h1 {
+  font-size: 96px;
+  color: white;
 }
-.banner .banner-text p{
-    font-size: 20px;
-    color: white;
-    font-weight: lighter;
-    margin: 18px 0;
+.banner .banner-text p {
+  font-size: 20px;
+  color: white;
+  font-weight: lighter;
+  margin: 18px 0;
+}
+/* ------ First Section ------ */
+.make-more .container {
+  display: flex;
+  align-items: center;
+}
+.make-more .make-more-text {
+  width: 50%;
+  padding: 0 50px;
+}
+.make-more .make-more-text h3 {
+  width: 100%;
+}
+.make-more .make-more-text p {
+  padding: 5px 0 10px 0;
+}
+.make-more .make-more-img {
+  width: 50%;
 }
