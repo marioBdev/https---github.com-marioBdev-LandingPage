@@ -18,27 +18,36 @@ footer {
 h3 {
   font-size: 90px;
 }
-p {
+p{
   color: #0000009c;
 }
 .container {
   max-width: 1400px;
   margin: 0 auto;
-  padding: 0 5%;
+  padding:0 5%;
 }
 .btn {
-  background-color: #4f9cf9;
+  background-color: #4f9cf9 ;
   color: white;
   padding: 15px 20px;
   border-radius: 10px;
   cursor: pointer;
   display: inline-block;
   transition: 0.1s;
+}
+.btn.animate-btn{
   animation: animate-outline 1s ease-out infinite;
 }
 .btn:hover {
   background-color: #3580db;
 }
+section,footer{
+    padding:54px 0;
+    /* background-color: red; */
+}
+/* ---------------------------------------- */
+/* It needs to fix animation button */
+/* ---------------------------------------- */
 @keyframes animate-outline {
   from {
     outline: 0px solid #4f9bf98a;
