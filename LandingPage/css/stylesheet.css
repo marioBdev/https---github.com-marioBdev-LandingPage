@@ -106,7 +106,7 @@ nav ul a:hover::after {
 }
 .banner .banner-text p {
   font-size: 20px;
-  color: white;
+  color: blueviolet;
   font-weight: lighter;
   margin: 18px 0;
 }
@@ -121,7 +121,7 @@ nav ul a:hover::after {
 }
 .make-more .make-more-text h3 {
   width: 100%;
-}
+}   
 .make-more .make-more-text p {
   padding: 5px 0 10px 0;
 }
